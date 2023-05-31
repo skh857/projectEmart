@@ -1,0 +1,152 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------------*/
+/*      브라우저 리셋      */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: rgb(245, 246, 247);
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrap{
+    width: 100%;
+    min-width: 1240px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*      헤더 라인      */
+
+.header{
+    width: 400px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.header .headerIn{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.header img{
+    width: 300px;
+    height: 70px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*      메인 라인      */
+
+.container{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register_content li{
+    margin-left: 100px;
+}
+
+.register_content .jc_textWrap{
+    font-weight: 700;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.register_content .jc_inputWrap{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.jc_inputWrap input{
+    width: 400px;
+    height: 40px;
+}
+
+.register_birth .jc_inputWrap input{
+    width: 128px;
+    height: 40px;
+}
+
+.register_birth .jc_inputWrap select{
+    width: 130px;
+    height: 40px;
+}
+
+.register_gender .jc_inputWrap select{
+    width: 400px;
+    height: 40px;
+}
+
+.register_tel .jc_inputWrap{
+    display: flex;
+}
+
+.register_tel .jc_inputWrap input{
+    width: 300px;
+    margin-right: 10px;
+}
+
+.register_tel .jc_inputWrap button{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(255, 183, 0);
+}
+
+.registerBtn .user_register{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 183, 0);
+}
+
+/*-------------------------------------------------------------------------*/
+/*      푸터 라인      */
+
+.footer{
+    height: 100px;
+}
+
+.footer .footerIn{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .fnbWrap{
+    height: 33px;
+    padding-top: 20px;
+}
+
+.footer .fnbWrap ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .fnbWrap li{
+    margin-right: 10px;
+}
+
+.footer .companyInfoWrap{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .companyInfoWrap h3{
+    margin-right: 10px;
+}

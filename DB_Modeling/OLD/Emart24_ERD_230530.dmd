@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Emart24_ERD_230530" id="C6F1EA1B-6E88-2991-AD40-69D1FFDE7F6B" version="3.5">
+<createdBy>GreenArt</createdBy>
+<createdTime>2023-05-30 05:38:36 UTC</createdTime>
+<ownerDesignName>Emart24_ERD_230530</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C6F1EA1B-6E88-2991-AD40-69D1FFDE7F6B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A04114FE-14F7-81C4-6466-66DAE4CFDC5A">
+<designStoragePath>D:\01-STUDY\서경훈\70_Portfolio_작업용\230502_데이터베이스_모델링</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="301CEE77-3DE1-FD25-0B71-745B05A89CE3">
+<designStoragePath>D:\01-STUDY\서경훈\70_Portfolio_작업용\230502_데이터베이스_모델링</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

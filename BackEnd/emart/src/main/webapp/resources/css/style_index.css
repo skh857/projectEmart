@@ -1,0 +1,293 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------------*/
+/*      브라우저 리셋      */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrap{
+    background-color: rgba(233, 226, 136, 0.5);
+    width: 100%;
+    min-width: 1240px;
+}
+
+.Scroll{
+    position : fixed;
+    bottom : 50px;
+    right : 50px;
+    transform: scale(0.5);
+}
+.Scroll .iOff{
+    display: none;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*      메인 라인       */
+
+.container{
+    padding-top: 118px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*      Banner       */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    background-color: rgb(248,187,0);
+}
+
+.banner .mainBanner{
+    width: 900px;
+    height: 100%;
+}
+
+.banner .mainBanner img{
+    width: 100%;
+    height: 100%;
+}
+
+/*      Banner → Login       */
+.banner .loginBox{
+    margin-top : 100px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .login{
+    width: 300px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.banner .login input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/*      Event       */
+.eventItem{
+    padding-top: 50px;
+    display: flex;
+    background-color: white;
+    height: 360px;
+    margin-bottom: 30px;
+}
+
+.eventItem .titleWrap{
+    width: 250px;
+    height: 360px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.eventItem .titleWrap .title{
+    width: 100%;
+}
+
+.eventItem .categories{
+    margin: 0px 20px;
+}
+
+.eventItem .categories .category{
+
+    margin-bottom: 10px;
+}
+
+.eventItem .eventItemImg ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.eventItem .eventItemImg li{
+    height: 350px;
+    border: 1px solid rgb(248,187,0);
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.eventItem .eventItemImg a img{
+    max-width: 200px;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.eventItem .eventItemImg .eventItemName{
+    margin-bottom: 10px;
+}
+
+/*      CustomerBoard       */
+.customerBoard{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+    height: 213px;
+}
+
+.customerBoard .noticeBoard{
+    width: 560px;
+    border: 1px solid rgb(248,187,0);
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.customerBoard .reviewBoard{
+    width: 560px;
+    border: 1px solid rgb(248,187,0);
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.customerBoard .title,
+.customerBoard .table{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.customerBoard .title{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+}
+
+.customerBoard .title b{
+	font-size: 22px;
+}
+
+.customerBoard .title img{
+	margin-top: 13px;
+}
+
+.customerBoard .table li p{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*      onlyEmart       */
+.onlyEmart{
+	width: 1100px;
+    height: 700px;
+    margin: 0px 10px;
+}
+
+.onlyEmart .title{
+    height: 80px;
+    margin-bottom: 50px;
+}
+
+.onlyEmartImg{
+    display: flex;
+}
+
+.onlyEmartImg li{
+    width: 300px;
+    height: 500px;
+    margin-right: 30px;
+}
+
+/*      mapService       */
+.mapService{
+    display: flex;
+    justify-content: space-between;
+    height: 334px;
+    margin: 0px 10px;
+}
+
+.mapService .title{
+    width: 700px;
+}
+
+.mapService .title h1{
+    margin-bottom: 30px;
+}
+
+.mapService .title .searchItem .searchBar{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.mapService .searchBar .searchTextBox{
+    width: 300px;
+    height: 50px;
+}
+
+.mapService .searchItem .tags{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 40px;
+}
+
+.mapService .mapImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/*      appService       */
+.appService{
+    height: 832px;
+}
+
+/*      emartStory       */
+.emartStory{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.emartStory .title{
+    width: 300px;
+}
+
+.emartStory .title .magazinSns{
+    display: flex;
+}
+
+.emartStory .magazinImg{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+}
+
+.emartStory .magazinImg li img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.bgcWhite{
+    background-color: white;
+}

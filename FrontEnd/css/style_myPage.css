@@ -1,0 +1,241 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrap{
+    background-color: rgba(233, 226, 136, 0.5);
+    width: 100%;
+    min-width: 1240px;
+}
+
+.Scroll{
+    position : fixed;
+    bottom : 50px;
+    right : 50px;
+    transform: scale(0.5);
+}
+.Scroll .iOff{
+    display: none;
+}
+
+
+/*      헤더 라인      */
+.header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 118px;
+    position : fixed;
+    top : 0;
+    left : 0;
+}
+
+.headerIn{
+    display: flex;
+    width: 1200px;
+    height: 118px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerIn .logo{
+    margin-left: 50px;    
+    margin-right: 50px;
+    margin-top: 48px;
+}
+
+.headerIn .logo img{
+    width: 113px;
+    height: 22px;
+}
+
+.header .gnb{
+    display: flex;
+    width: 800px;
+    align-items: center;
+}
+
+.titleEvent{
+    display: none;
+}
+
+.gnb .gnbMenu{
+    width: 140px;
+    justify-content: space-between;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.headerIn .headerHidden{
+    position: absolute;
+    top: 118px;
+    background-color: rgba(255, 209, 124, 0.9);
+    height: 130px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerHidden ul li{
+    line-height: 35px;
+}
+
+.headerHidden .gnbHidden{
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+    margin-top: 10px;
+    margin-left: 230px;
+}
+
+.gnbHidden .gnbHiddenMenu{
+    width: 118px;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------*/
+/*      메인 라인      */
+ul,ol{
+    list-style: none;
+}
+.container{
+    padding-top: 118px;
+    width: 1200px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.page-body{
+    /* background-color: bisque; */
+    width: 600px;
+}
+.info{
+    /* background-color: cadetblue; */
+    margin-bottom: 30px;
+}
+.user{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-center;
+    padding :30px;
+}
+.user.userThumb{
+    /* background-color: blue; */
+    width: 100px;
+}
+.userThumb a{
+    padding:20px;
+}
+.user.usefinfo{
+    /* background-color: coral; */
+    width: 500px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.order{
+    /* background-color: chartreuse; */
+    font-size: 14px;
+    font-weight:600;
+    display: flex;
+}
+.order dl{
+    border:1px solid #111;
+    width: 150px;
+    height: 60px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.user_data{
+    font-size: 20px;
+    font-weight:400;
+    margin-bottom: 30px;
+}
+.join_content{
+    width: 260px;
+    padding-left: 175px;
+
+}
+.user_data #user_id,#user_pw1,#user_pw2,#user_name,#user_tel{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.Btn{
+    position: relative;
+    margin-top: 30px;
+}
+.Btn button{
+    width: 80px;
+    font-size: 18px;
+    font-weight:400;
+    margin-top:10px;
+}
+.Btn .modifiedBtn{
+position: absolute;
+left: 175px;
+bottom: 0px;
+}
+.Btn .backBtn{
+position: absolute;
+right: 175px;
+bottom: 0px;
+}
+/*      푸터 라인      */
+
+.footer{
+    background-color: rgb(255, 255, 255);
+    height: 334px;
+}
+
+.footer .footerIn{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fnbWrap{
+    display: flex;
+    height: 33px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.fnbWrap ul{
+    display: flex;
+}
+
+.footerContentsWrap{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.companyInfo h3{
+    margin-bottom: 30px;
+}
+
+.snsWrap ul{
+    display: flex;
+}
+
+.snsWrap .tiktok{
+    transform: scale(0.5);
+}

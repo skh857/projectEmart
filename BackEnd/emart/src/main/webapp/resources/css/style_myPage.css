@@ -1,0 +1,131 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrap{
+    background-color: rgba(233, 226, 136, 0.5);
+    width: 100%;
+    min-width: 1240px;
+}
+
+.Scroll{
+    position : fixed;
+    bottom : 50px;
+    right : 50px;
+    transform: scale(0.5);
+}
+.Scroll .iOff{
+    display: none;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*      메인 라인      */
+ul,ol{
+    list-style: none;
+}
+.container{
+    padding-top: 118px;
+    width: 1200px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.page-body{
+    /* background-color: bisque; */
+    width: 600px;
+}
+.info{
+    /* background-color: cadetblue; */
+    margin-bottom: 30px;
+}
+.user{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-center;
+    padding :30px;
+}
+.user.userThumb{
+    /* background-color: blue; */
+    width: 100px;
+}
+.userThumb a{
+    padding:20px;
+}
+.user.usefinfo{
+    /* background-color: coral; */
+    width: 500px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.order{
+    /* background-color: chartreuse; */
+    font-size: 14px;
+    font-weight:600;
+    display: flex;
+}
+.order dl{
+    border:1px solid #111;
+    width: 150px;
+    height: 60px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.user_data{
+    font-size: 20px;
+    font-weight:400;
+    margin-bottom: 30px;
+}
+.join_content{
+    width: 260px;
+    padding-left: 175px;
+
+}
+.user_data #user_id,#user_pw1,#user_pw2,#user_name,#user_tel{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.Btn{
+    position: relative;
+    margin-top: 30px;
+}
+.Btn button{
+    width: 80px;
+    font-size: 18px;
+    font-weight:400;
+    margin-top:10px;
+}
+.Btn .modifiedBtn{
+position: absolute;
+left: 175px;
+bottom: 0px;
+}
+.Btn .backBtn{
+position: absolute;
+right: 175px;
+bottom: 0px;
+}
+
+
+.bgcWhite{
+    background-color: white;
+}
