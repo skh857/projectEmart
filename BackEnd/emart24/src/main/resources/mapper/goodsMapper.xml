@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.orange.goods.dao.GoodsMapper">
+
+    <!-- 상품 추가 -->
+    <insert id="insertGoods" parameterType="GoodsDTO">
+	INSERT INTO goods (g_no, g_image, g_name, g_price)
+	VALUES (SEQ_GOODS.nextval, #{g_image}, #{g_name}, #{g_price})
+	</insert>
+
+    <!-- 모든 상품 조회 -->
+    <select id="selectAllGoods" resultType="GoodsDTO">
+        SELECT g_no, g_image, g_name, g_price
+        FROM goods
+    </select>
+
+    <!-- 상품 번호로 조회 -->
+    <select id="selectGoods" parameterType="Integer" resultType="GoodsDTO">
+        SELECT g_no, g_image, g_name, g_price
+        FROM goods
+        WHERE g_no = #{g_no}
+    </select>
+
+    <!-- 상품 정보 업데이트 -->
+    <update id="updateGoods" parameterType="GoodsDTO">
+        UPDATE goods
+        SET g_name = #{g_name}, g_image = #{g_image}, g_price = #{g_price}
+        WHERE g_no = #{g_no}
+    </update>
+
+    <!-- 상품 삭제 -->
+    <delete id="deleteGoods" parameterType="Integer">
+        DELETE FROM goods
+        WHERE g_no = #{g_no}
+    </delete>
+
+	<!-- 특정 상품 삭제 후 순서 조정 -->
+	<update id="updateGoodsSequence" parameterType="int">
+	    UPDATE GOODS
+	    SET g_no = g_no - 1
+	    WHERE g_no > #{g_no}
+	</update>
+</mapper>

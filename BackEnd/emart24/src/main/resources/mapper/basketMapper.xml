@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.orange.basket.dao.BasketMapper">
+
+	<!-- 장바구니의 모든 데이터를 삭제합니다. -->
+    <delete id="deleteAllBasket" parameterType="int">
+        DELETE FROM basket
+        WHERE b_no = #{b_no}
+    </delete>
+    
+    <!-- 장바구니의 품목 삭제 -->
+    <delete id="deleteBasket" parameterType="int">
+        DELETE FROM basket
+        WHERE b_no = #{b_no}
+    </delete>
+
+	<!-- 장바구니에서 특정 상품 삭제 후 순서 조정 -->
+	<update id="updateBasketSequence" parameterType="int">
+	    UPDATE basket
+	    SET b_no = b_no - 1
+	    WHERE b_no > #{b_no}
+	</update>
+	
+	<!-- 장바구니 데이터 추가 -->
+	<insert id="insertBasket" parameterType="BasketDTO"> 
+		INSERT INTO basket (b_no, b_image, b_name, b_price, b_purchase_cnt, b_purchase_price, g_no, id)
+	 	SELECT seq_basket.nextval, G.g_image, G.g_name, G.g_price, 1, #{b_purchase_price}, G.g_no, #{id}
+	 	FROM goods G
+	 	WHERE G.g_no = #{g_no}
+	</insert>
+
+	<!-- 특정 사용자의 장바구니 조회 -->
+	<select id="selectAllBasketByUser" parameterType="String" resultType="BasketDTO">
+		SELECT b_no, b_image, b_name, b_price, b_purchase_cnt, b_purchase_price, g_no, id
+		FROM basket
+		WHERE id = #{id}
+		ORDER BY b_no ASC
+	</select>
+	
+	<!-- 장바구니 내 상품 확인 -->
+	<select id="selectBasket" parameterType="BasketDTO" resultType="int">
+		SELECT COUNT(*)
+		FROM basket
+		WHERE id = #{id} AND g_no = #{g_no} 
+	</select>
+	
+	<!-- 상품 중복 추가 -->
+	<update id="duplicateAdd" parameterType="BasketDTO">
+		UPDATE basket
+		SET b_purchase_cnt = b_purchase_cnt + #{b_purchase_cnt}, b_purchase_price = b_purchase_price + #{b_purchase_price} 
+		WHERE g_no = #{g_no} AND id = #{id}
+	</update>
+
+</mapper>

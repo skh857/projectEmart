@@ -1,0 +1,84 @@
+.header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 118px;
+    position : fixed;
+    top : 0;
+    left : 0;
+}
+
+.headerIn{
+    display: flex;
+    width: 1200px;
+    height: 118px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerIn .logo{
+    margin-left: 50px;    
+    margin-right: 50px;
+    margin-top: 48px;
+}
+
+.headerIn .logo img{
+    width: 113px;
+    height: 22px;
+}
+
+.header .gnb{
+    display: flex;
+    width: 800px;
+    align-items: center;
+}
+
+.titleEvent{
+    display: none;
+}
+
+.gnb .gnbMenu{
+    width: 140px;
+    justify-content: space-between;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.headerIn .userInfo{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.userInfo p{
+	margin-bottom: 10px;
+}
+
+.userInfo a{
+	font-size: 12px;
+}
+
+.headerIn .headerHidden{
+    position: absolute;
+    top: 118px;
+    background-color: rgba(255, 209, 124, 0.9);
+    height: 130px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerHidden ul li{
+    line-height: 35px;
+}
+
+.headerHidden .gnbHidden{
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+    margin-top: 10px;
+    margin-left: 230px;
+}
+
+.gnbHidden .gnbHiddenMenu{
+    width: 118px;
+    text-align: center;
+}

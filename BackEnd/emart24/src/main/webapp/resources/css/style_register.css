@@ -1,0 +1,139 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------------*/
+/*      브라우저 리셋      */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: rgb(245, 246, 247);
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrap{
+    width: 100%;
+    min-width: 1240px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*      헤더 라인      */
+
+.header{
+    width: 400px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.header .headerIn{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.header img{
+    width: 300px;
+    height: 70px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*      메인 라인      */
+
+.container{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register_content li{
+    margin-left: 100px;
+}
+
+.register_content .rc_textWrap{
+    font-weight: 700;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.register_content .rc_inputWrap{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.rc_inputWrap input{
+    width: 386px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.register_id .rc_inputWrap{
+    display: flex;
+}
+
+.register_id .rc_inputWrap input{
+    width: 286px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.register_id .rc_inputWrap button{
+    width: 90px;
+    height: 44px;
+    background-color: rgb(255, 183, 0);
+}
+
+.registerBtn .user_register{
+    width: 400px;
+    height: 44px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 183, 0);
+}
+
+/*-------------------------------------------------------------------------*/
+/*      푸터 라인      */
+
+.footer{
+    height: 100px;
+}
+
+.footer .footerIn{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .fnbWrap{
+    height: 33px;
+    padding-top: 20px;
+}
+
+.footer .fnbWrap ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .fnbWrap li{
+    margin-right: 10px;
+}
+
+.footer .companyInfoWrap{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .companyInfoWrap h3{
+    margin-right: 10px;
+}
