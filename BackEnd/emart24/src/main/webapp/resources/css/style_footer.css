@@ -1,0 +1,48 @@
+.footer{
+    background-color: rgb(255, 255, 255);
+    height: 334px;
+}
+
+.footer .footerIn{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fnbWrap{
+    display: flex;
+    height: 33px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.fnbWrap ul{
+    display: flex;
+}
+
+.fnbWrap ul li{
+	margin-right: 15px;
+}
+
+.footerContentsWrap{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.companyInfo h2{
+    margin-bottom: 30px;
+}
+
+.companyInfo p{
+	line-height: 23px;
+}
+
+.snsWrap ul{
+    display: flex;
+}
+
+.snsWrap .tiktok{
+    transform: scale(0.5);
+}
