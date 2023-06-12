@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Emart24_ERD_230612" id="D519417C-5D91-EB57-4186-D678266823C8" version="3.5">
+<createdBy>GreenArt</createdBy>
+<createdTime>2023-06-12 00:20:29 UTC</createdTime>
+<ownerDesignName>Emart24_ERD_230612</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D519417C-5D91-EB57-4186-D678266823C8</designId>
+</OSDM_Design>
