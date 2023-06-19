@@ -10,9 +10,9 @@
 	</settings>
 
 	<typeAliases>
-		<typeAlias alias="UserDTO" type="com.orange.user.domain.UserDTO" />
-		<typeAlias alias="GoodsDTO" type="com.orange.goods.domain.GoodsDTO" />
-		<typeAlias alias="BasketDTO" type="com.orange.basket.domain.BasketDTO" />
+		<typeAlias alias="UserDTO" type="com.emart.domain.UserDTO" />
+		<typeAlias alias="GoodsDTO" type="com.emart.domain.GoodsDTO" />
+		<typeAlias alias="BasketDTO" type="com.emart.domain.BasketDTO" />
 	</typeAliases>
 	
 </configuration>

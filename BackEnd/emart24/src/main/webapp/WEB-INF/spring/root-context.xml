@@ -23,8 +23,6 @@
 		<constructor-arg ref="sqlSessionFactory" />
 	</bean>
 	
-	<context:component-scan base-package="com.orange.user" />
-	<context:component-scan base-package="com.orange.goods" />
-	<context:component-scan base-package="com.orange.basket" />
+	<context:component-scan base-package="com.emart" />
 
 </beans>

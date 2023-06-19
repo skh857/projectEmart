@@ -3,27 +3,8 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.orange.basket.dao.BasketMapper">
+<mapper namespace="com.emart.dao.BasketMapper">
 
-	<!-- 장바구니의 모든 데이터를 삭제합니다. -->
-    <delete id="deleteAllBasket" parameterType="int">
-        DELETE FROM basket
-        WHERE b_no = #{b_no}
-    </delete>
-    
-    <!-- 장바구니의 품목 삭제 -->
-    <delete id="deleteBasket" parameterType="int">
-        DELETE FROM basket
-        WHERE b_no = #{b_no}
-    </delete>
-
-	<!-- 장바구니에서 특정 상품 삭제 후 순서 조정 -->
-	<update id="updateBasketSequence" parameterType="int">
-	    UPDATE basket
-	    SET b_no = b_no - 1
-	    WHERE b_no > #{b_no}
-	</update>
-	
 	<!-- 장바구니 데이터 추가 -->
 	<insert id="insertBasket" parameterType="BasketDTO"> 
 		INSERT INTO basket (b_no, b_image, b_name, b_price, b_purchase_cnt, b_purchase_price, g_no, id)

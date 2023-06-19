@@ -24,9 +24,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.orange.user" />
-	<context:component-scan base-package="com.orange.goods" />
-	<context:component-scan base-package="com.orange.basket" />
+	<context:component-scan base-package="com.emart" />
 	
 	<view-controller path="/" view-name="index"/>
 	

@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.orange.goods.dao.GoodsMapper">
+<mapper namespace="com.emart.dao.GoodsMapper">
 
     <!-- 상품 추가 -->
     <insert id="insertGoods" parameterType="GoodsDTO">
@@ -36,11 +36,4 @@
         DELETE FROM goods
         WHERE g_no = #{g_no}
     </delete>
-
-	<!-- 특정 상품 삭제 후 순서 조정 -->
-	<update id="updateGoodsSequence" parameterType="int">
-	    UPDATE GOODS
-	    SET g_no = g_no - 1
-	    WHERE g_no > #{g_no}
-	</update>
 </mapper>
