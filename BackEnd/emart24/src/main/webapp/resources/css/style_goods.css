@@ -26,17 +26,14 @@ a{
     min-width: 1240px;
 }
 
-.Scroll{
+.scroll{
     position : fixed;
     bottom : 50px;
     right : 50px;
-    transform: scale(0.5);
+    
+	width: 50px;
+	height: 50px;
 }
-
-.Scroll .iOff{
-    display: none;
-}
-
 
 /*-------------------------------------------------------------------------*/
 /*      메인 라인      */

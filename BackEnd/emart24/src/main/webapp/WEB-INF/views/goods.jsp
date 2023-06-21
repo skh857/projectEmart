@@ -10,17 +10,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>행사상품</title>
-    <link rel="stylesheet" href="<c:url value='/css/style_goods.css?b'/>">
+    <link rel="stylesheet" href="<c:url value='/css/style_goods.css?c'/>">
 </head>
 <body>
-    <a href="" class="Scroll">
-        <img src="<c:url value='/img/위를향해.png'/>" alt="TOP" class="iOn">
-        <img src="<c:url value='/img/위를향해2.png'/>" alt="TOP" class="iOff">
-    </a>
     <div class="wrap">
         
         <%@include file="./header.jsp" %>
 
+		<a href="" class="scroll"><span>Top</span></a>
+		
         <div class="goodsContainer bgcWhite">
             <div class="titleWrap">
                 <h1>행사상품</h1>
