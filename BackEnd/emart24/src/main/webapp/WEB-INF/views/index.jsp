@@ -9,18 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈 - 이마트24</title>
-    <link rel="stylesheet" href="<c:url value='/css/style_index.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/style_index.css?a'/>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
-    <a href="" class="Scroll">
-        <img src="<c:url value='/img/위를향해.png'/>" alt="TOP" class="iOn">
-        <img src="<c:url value='/img/위를향해2.png'/>" alt="TOP" class="iOff">
-    </a>
+    
     <div class="wrap">
         
         <%@include file="./header.jsp" %>
 
+		<a href="" class="scroll"><span>Top</span></a>
+		
         <div class="container bgcWhite">
             <div class="banner">
                 <div class="mainBanner">
